@@ -3,7 +3,7 @@
     "description": "Logging HTTP Access for Laravel",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "autoload": {
         "psr-4": {
             "YukataRm\\Laravel\\AccessLog\\": "src"
@@ -12,7 +12,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "YukataRm\\Laravel\\AccessLog\\Provider\\ServiceProvider"
+                "YukataRm\\Laravel\\AccessLog\\Provider\\MiddlewareServiceProvider",
+                "YukataRm\\Laravel\\AccessLog\\Provider\\PublicationServiceProvider"
             ]
         }
     },
